@@ -207,6 +207,36 @@
     display: block;
   }
 
+  #searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 70%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+  .animals{
+    display: list-item;    
+   } 
+
+   .btn {
+  
+    background-color: black;
+    margin-left: 17%;
+    
+   }
+
+
   .songList {
     font-family: Vulf Mono;
     font-size: 21px;

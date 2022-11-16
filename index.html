@@ -2,6 +2,8 @@
 <html>
     <head>
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         
         <link rel="stylesheet" href="style.css">
 
@@ -13,10 +15,13 @@
     </head>
     <body>
 
-      <h1 class="info">Text Request to <br>210-264-8787</h1>
+      <!--<h1 class="info">Text Request to <br>210-264-8787</h1>
           <h1 class="info">Or</h1>
-          <h1 class="info">Venmo <a href="https://account.venmo.com/u/joshkindla">@joshkindla</a> <br> Cash App <a href="https://cash.app/$JoshuaKindla">$JoshuaKindla</a></h1>
-          <h2 class="info">Tips much appreciated!</h2>
+          <h1 class="info">Venmo <a href="https://account.venmo.com/u/joshkindla">@joshkindla</a> <br> Cash App <a href="https://cash.app/$JoshuaKindla">$JoshuaKindla</a></h1>-->
+          <h1 class="info">Welcome to my Song List!</h1>
+          <h2 class="info">Scroll or Search for a song below</h2>
+          <h3 class="info">Tips are much appreciated!</h3>
+          <p class="info">Back to Josh's info <a href="https://linktr.ee/jkindla">here.</a></p>
 
 
         <div class="jukebox">
@@ -31,135 +36,145 @@
 
                 <div class="container open">
                    <h2 class="songList">Song List</h2>
+
+                   <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+    name="search" placeholder="Search artist or song..">
+
+    <br><br>
+
+                   
                     <ul class="fixed-list">
                     
-                    <ul class="scrolling-list">
-                      <li>1979 - Smashing Pumpkins. <hr></li>
-                      <li>3AM - Matchbox 20. <hr></li>
-                      <li>5 O'Clock Somewhere - Alan Jackson. <hr></li>
-                      <li>All Apologies - Nirvana. <hr></li>
-                      <li>All Of Me - John Legend. <hr></li>
-                      <li>Amarillo By Morning - George Strait. <hr></li>
-                      <li>American Pie - Don McLean. <hr></li>
-                      <li>Angel - Shaggy. <hr></li>
-                      <li>Austin - Blake Shelton. <hr></li>
-                      <li>Baby Blue - George Strait. <hr></li>
-                      <li>Baby I Love Your Way - Peter Frampton. <hr></li>
-                      <li>Badfish - Sublime. <hr></li>
-                      <li>Bennie and the Jets - Elton John. <hr></li>
-                      <li>Better Man - Pearl Jam. <hr></li>
-                      <li>Billy Jean - Michael Jackson. <hr></li>
-                      <li>Bittersweet Symphony - The Verve. <hr></li>
-                      <li>Blister in the Sun - Violent Femmes. <hr></li>
-                      <li>Brown Eyed Girl - Van Morrison. <hr></li>
-                      <li>Buckets of Rain - Bob Dylan. <hr></li>
-                      <li>Californiacation - Red Hot Chili Peppers. <hr></li>
-                      <li>Careless Whisper - George Michael. <hr></li>
-                      <li>The Chair - George Strait. <hr></li>
-                      <li>Closing Time - Semisonic. <hr></li>
-                      <li>Come And Get Your Love - Redbone. <hr></li>
-                      <li>Come on Eileen - Dexy and the Midnight Runners. <hr></li>
-                      <li>Come Together - The Beatles. <hr></li>
-                      <li>Como La Flor - Selena. <hr></li>
-                      <li>Country Roads - John Denver. <hr></li>
-                      <li>Crazy - Gnarles Barkley. <hr></li>
-                      <li>Creep - Radiohead. <hr></li>
-                      <li>Dani California - Red Hot Chili Peppers. <hr></li>
-                      <li>Don't Dream It's Over - Crowded House. <hr></li>
-                      <li>Don't Stop Believing - Journey. <hr></li>
-                      <li>Drift Away - Dobie Gray. <hr></li>
-                      <li>Drinkin' Problem - Midland. <hr></li>
-                      <li>Drive - Incubus. <hr></li>
-                      <li>Drops of Jupiter - Train. <hr></li>
-                      <li>Easy - The Commodores. <hr></li>
-                      <li>Feel Good Inc. - Gorillaz. <hr></li>
-                      <li>First Cut is the Deepest - Cat Stevens. <hr></li>
-                      <li>Fly Me to the Moon - Frank Sinatra. <hr></li>
-                      <li>Folsom Prison Blues - Johnny Cash. <hr></li>
-                      <li>Freebird - Lynrd Skynrd ($100 ;) ). <hr></li>
-                      <li>Friends in Low Places - Garth Brooks. <hr></li>
-                      <li>Give Me One Reason - Tracy Chapman. <hr></li>
-                      <li>Gravity - John Mayer. <hr></li>
-                      <li>Gypsy - Fleetwood Mac. <hr></li>
-                      <li>Halleluiah - Jeff Buckley. <hr></li>
-                      <li>Have You Ever Seen The Rain - CCR. <hr></li>
-                      <li>Head Over Boots - John Pardi. <hr></li>
-                      <li>Hey Jude - The Beatles. <hr></li>
-                      <li>High and Dry - Radiohead. <hr></li>
-                      <li>Hotel California - The Eagles. <hr></li>
-                      <li>How Deep is Your Love - The Bee Gees. <hr></li>
-                      <li>How Far is Heaven - Los Lonely Boys. <hr></li>
-                      <li>Human Nature - Michael Jackson. <hr></li>
-                      <li>I Just Called to Say I Love You - Stevie Wonder. <hr></li>
-                      <li>I Just Wanna Fly - Sugar Ray. <hr></li>
-                      <li>I Just Want To Dance With You - George Strait. <hr></li>
-                      <li>I'm On Fire - Bruce Springsteen. <hr></li>
-                      <li>Iris - Goo Goo Dolls. <hr></li>
-                      <li>It's Your Love - Tim McGraw. <hr></li>
-                      <li>Jolene - Dolly Parton. <hr></li>
-                      <li>Just Like Heaven - The Cure. <hr></li>
-                      <li>Just the Two Of Us - Bill Whithers. <hr></li>
-                      <li>Drive - Incubus. <hr></li>
-                      <li>Kiss Me - Sixpence Non the Richter. <hr></li>
-                      <li>Landslide - Stevie Nicks. <hr></li>
-                      <li>Last Night - The Strokes. <hr></li>
-                      <li>Lean On Me - Bill Whithers. <hr></li>
-                      <li>Learning to Fly - Tom Petty. <hr></li>
-                      <li>Little Red Corvette - Prince. <hr></li>
-                      <li>Drive - Incubus. <hr></li>
-                      <li>Make Me Wanna - Thomas Rhett. <hr></li>
-                      <li>Mary Jane's Last Dance - Tom Petty. <hr></li>
-                      <li>Money - Pink Floyd. <hr></li>
-                      <li>More Than Words - Extreme. <hr></li>
-                      <li>Mr. Brightside - The Killers. <hr></li>
-                      <li>My Hero - Foo Fighters. <hr></li>
-                      <li>My Own Worst Enemy - Lit. <hr></li>
-                      <li>Neon Moon - Brooks and Dunn. <hr></li>
-                      <li>One Of These Nights - The Eagles. <hr></li>
-                      <li>Operator - Jim Croce. <hr></li>
-                      <li>Piano Man - Billy Joel <hr></li>
-                      <li>Plush - Stone Temple Pilots. <hr></li>
-                      <li>Pride and Joy - Stevie Ray Vaughan. <hr></li>
-                      <li>The Promise - When in Rome. <hr></li>
-                      <li>Purple Rain - Prince. <hr></li>
-                      <li>Push - Matchbox 20. <hr></li>
-                      <li>Put Your Head on My Shoulders - Paul Anka. <hr></li>
-                      <li>Rhiannon - Fleetwood Mac. <hr></li>
-                      <li>Rich Girl - Hall and Oates. <hr></li>
-                      <li>Rocket Man - Elton John. <hr></li>
-                      <li>Sara Smile - Hall and Oates. <hr></li>
-                      <li>Say It Ain't So - Weezer. <hr></li>
-                      <li>Scar Tissue - Red Hot Chili Peppers. <hr></li>
-                      <li>Seven Nation Army - White Stripes. <hr></li>
-                      <li>Simple Man - Lynrd Syknrd. <hr></li>
-                      <li>Sittin on The Dock Of The Bay - Ottis Redding. <hr></li>
-                      <li>Slow Dancing In A Burning Room - John Mayer. <hr></li>
-                      <li>Something - The Beatles. <hr></li>
-                      <li>Space Oddity - David Bowie. <hr></li>
-                      <li>Stand By Me - BBen E. King. <hr></li>
-                      <li>Start Me Up - Rolling Stones. <hr></li>
-                      <li>Stop This Train - John Mayer. <hr></li>
-                      <li>Strawberry Wine - Deana Carter. <hr></li>
-                      <li>Suit and Tie - Justin Timberlake. <hr></li>
-                      <li>Superstitious - Stevie Wonder. <hr></li>
-                      <li>Sweet Caroline - Neil Diamond. <hr></li>
-                      <li>Sweet Home Alabama - Lynrd Skynrd. <hr></li>
-                      <li>Take Me Out - Franz Ferdinand. <hr></li>
-                      <li>Take On Me - Ah Ha. <hr></li>
-                      <li>Tears In Heaven - Eric Clapton. <hr></li>
-                      <li>Tennessee Whiskey - Chris Stapleton. <hr></li>
-                      <li>Time Of Your Life - Green Day. <hr></li>
-                      <li>Toxic - Brittney Spears. <hr></li>
-                      <li>Turn The Page - Bob Segar <hr>.</li>
-                      <li>Waggon Wheel - Darius Rucker. <hr></li>
-                      <li>Waiting on the World to Change - John Mayer. <hr></li>
-                      <li>Wasn't Me - Shaggy. <hr></li>
-                      <li>The Way You Make Me Feel - Michael Jackson. <hr></li>
-                      <li>What I Got - Sublime. <hr></li>
-                      <li>Wild World - Cat Stevens. <hr></li>
-                      <li>With Or Without You - U2. <hr></li>
-                      <li>Wonderwall - Oasis. <hr></li>
-                      <li>You Can't Always Get What You Want - The Rolling Stones. <hr></li>
+                    <ul class="scrolling-list" id="list">
+                      <li class="animals">1979 - Smashing Pumpkins. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr>
+                      
+                      </li>
+                      <li class="animals">3AM - Matchbox 20. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">5 O'Clock Somewhere - Alan Jackson. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">All Apologies - Nirvana. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">All Of Me - John Legend. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Amarillo By Morning - George Strait. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">American Pie - Don McLean. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Angel - Shaggy. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Austin - Blake Shelton. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Baby Blue - George Strait. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Baby I Love Your Way - Peter Frampton. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Badfish - Sublime. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Bennie and the Jets - Elton John. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Better Man - Pearl Jam. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Billy Jean - Michael Jackson. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Bittersweet Symphony - The Verve. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Blister in the Sun - Violent Femmes. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Brown Eyed Girl - Van Morrison. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Buckets of Rain - Bob Dylan. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Californiacation - Red Hot Chili Peppers. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Careless Whisper - George Michael. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">The Chair - George Strait. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Closing Time - Semisonic. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Come And Get Your Love - Redbone. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Come on Eileen - Dexy and the Midnight Runners. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Come Together - The Beatles. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Como La Flor - Selena. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Country Roads - John Denver. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Crazy - Gnarles Barkley. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Creep - Radiohead. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Dani California - Red Hot Chili Peppers. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Don't Dream It's Over - Crowded House. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Don't Stop Believing - Journey. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drift Away - Dobie Gray. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drinkin' Problem - Midland. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drive - Incubus. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drops of Jupiter - Train. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Easy - The Commodores. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Feel Good Inc. - Gorillaz. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">First Cut is the Deepest - Cat Stevens. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Fly Me to the Moon - Frank Sinatra. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Folsom Prison Blues - Johnny Cash. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Freebird - Lynrd Skynrd ($100 ;) ). <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Friends in Low Places - Garth Brooks. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Give Me One Reason - Tracy Chapman. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Gravity - John Mayer. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Gypsy - Fleetwood Mac. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Halleluiah - Jeff Buckley. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Have You Ever Seen The Rain - CCR. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Head Over Boots - John Pardi. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Hey Jude - The Beatles. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">High and Dry - Radiohead. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Hotel California - The Eagles. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">How Deep is Your Love - The Bee Gees. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">How Far is Heaven - Los Lonely Boys. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Human Nature - Michael Jackson.<br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">I Just Called to Say I Love You - Stevie Wonder. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">I Just Wanna Fly - Sugar Ray. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">I Just Want To Dance With You - George Strait. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">I'm On Fire - Bruce Springsteen. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Iris - Goo Goo Dolls. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">It's Your Love - Tim McGraw. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Jolene - Dolly Parton. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Just Like Heaven - The Cure. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Just the Two Of Us - Bill Whithers. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drive - Incubus. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Kiss Me - Sixpence Non the Richter. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Landslide - Stevie Nicks. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Last Night - The Strokes. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Lean On Me - Bill Whithers.<br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">Learning to Fly - Tom Petty. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Little Red Corvette - Prince. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Drive - Incubus. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Make Me Wanna - Thomas Rhett.<br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">Mary Jane's Last Dance - Tom Petty. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Money - Pink Floyd. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">More Than Words - Extreme. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Mr. Brightside - The Killers. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">My Hero - Foo Fighters. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">My Own Worst Enemy - Lit. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Neon Moon - Brooks and Dunn. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">One Of These Nights - The Eagles. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Operator - Jim Croce. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Piano Man - Billy Joel <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Plush - Stone Temple Pilots. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Pride and Joy - Stevie Ray Vaughan. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">The Promise - When in Rome. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Purple Rain - Prince. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Push - Matchbox 20. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Put Your Head on My Shoulders - Paul Anka. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Rhiannon - Fleetwood Mac. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Rich Girl - Hall and Oates. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Rocket Man - Elton John.<br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">Sara Smile - Hall and Oates. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Say It Ain't So - Weezer. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Scar Tissue - Red Hot Chili Peppers. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Seven Nation Army - White Stripes. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Simple Man - Lynrd Syknrd. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Sittin on The Dock Of The Bay - Ottis Redding. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Slow Dancing In A Burning Room - John Mayer.<br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a> <hr></li>
+                      <li class="animals">Something - The Beatles. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Space Oddity - David Bowie. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Stand By Me - BBen E. King. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Start Me Up - Rolling Stones. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Stop This Train - John Mayer. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Strawberry Wine - Deana Carter. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Suit and Tie - Justin Timberlake. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Superstitious - Stevie Wonder. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Sweet Caroline - Neil Diamond. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Sweet Home Alabama - Lynrd Skynrd. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Take Me Out - Franz Ferdinand. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Take On Me - Ah Ha. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Tears In Heaven - Eric Clapton. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Tennessee Whiskey - Chris Stapleton. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Time Of Your Life - Green Day. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Toxic - Brittney Spears. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Turn The Page - Bob Segar <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr>.</li>
+                      <li class="animals">Waggon Wheel - Darius Rucker. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Waiting on the World to Change - John Mayer. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Wasn't Me - Shaggy. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">The Way You Make Me Feel - Michael Jackson. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">What I Got - Sublime. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Wild World - Cat Stevens. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">With Or Without You - U2. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">Wonderwall - Oasis. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
+                      <li class="animals">You Can't Always Get What You Want - The Rolling Stones. <br><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a><hr></li>
 
                       
 
@@ -180,9 +195,44 @@
 
             
             </div>
+
+            <!-- Modal -->
+<!-- basic modal -->
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" class="info" id="myModalLabel">Send Me Your Request Through Venmo, Cash App, or Text, and I'll put it on cue!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h1 class="info">Venmo: <a href="https://account.venmo.com/u/joshkindla">@joshkindla</a> <br> Cash App: <a href="https://cash.app/$JoshuaKindla">$JoshuaKindla</a> <br>Text: 210-264-8787</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
             <div class="jukebox__leg jukebox__leg--left"></div>
             <div class="jukebox__leg jukebox__leg--right"></div>
           </div>
+
+          <script src="/script.js"></script>
+
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
           
          
